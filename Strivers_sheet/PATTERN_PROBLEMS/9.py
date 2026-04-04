@@ -1,0 +1,31 @@
+# Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+
+
+
+#     * 
+#    ***
+#   *****
+#  *******
+# *********
+# *********
+#  *******
+#   *****
+#    ***
+#     *
+
+
+# Print the pattern in the function given to you.
+
+class pattern:
+    def nine(self,n):
+        for i in range(n):
+            for j in range(i,i+1):
+                print(" "*(n-i-1) + "*"*(2*i+1))
+        
+
+        for i in range(n-1,-1,-1):
+            for j in range(i,i+1):
+                print(" "*(n-i-1) + "*" * (2*i + 1))
+
+p = pattern()
+p.nine(5)
