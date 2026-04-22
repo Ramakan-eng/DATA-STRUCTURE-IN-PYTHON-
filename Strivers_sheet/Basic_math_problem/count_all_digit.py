@@ -17,4 +17,4 @@ def count(n):
         count = count+1
     print(count)
 
-count(-0)
+count(123)
