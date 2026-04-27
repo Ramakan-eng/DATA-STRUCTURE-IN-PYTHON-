@@ -22,7 +22,12 @@ class gcd:
             print(gcd)
             return gcd
 
-    
+    def by_better_approach(self,a,b):
+        for i in range(min(a,b),0,-1):
+            if a%i ==0 and b%i == 0:
+                print(i)
+                return i 
 obj = gcd()
 # obj.gcd_cal(9,12)
 obj.by_broute(9,12)
+obj.by_better_approach(9,12)
