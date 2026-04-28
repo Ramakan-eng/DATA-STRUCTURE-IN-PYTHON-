@@ -24,4 +24,14 @@ def all_diveser(num):
         diviser = diviser + 1
     print(list_div)
 
-all_diveser(160)
+def by_sqrt(num):
+    div_list =[]
+
+    for  i in range(1,int(num**(1/2))+1):
+        if num % i ==0:
+            div_list.append(i)
+            if i != num//i:
+                div_list.append(num//i)
+    print(div_list)
+all_diveser(16)
+by_sqrt(16)
