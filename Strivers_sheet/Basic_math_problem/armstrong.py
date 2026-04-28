@@ -21,7 +21,21 @@ def armstrong(num):
     if arm_num == num:
         print("yes this is armstrong number:",num)
     else:
-        print("this is not armstorng number")
+        print("this is not armstorng number:",num)
         return False
     
+
+def by_digit_armstrong(num):
+    copy_arm =num
+    arm_num =0
+    while num >0:
+        digit =num%10 
+        arm_num =arm_num + digit**3
+        num = num//10
+    if arm_num == copy_arm:
+        print("Given number is armstrong number:",arm_num)
+    else:
+        print("given arm number is not armstrong number:",copy_arm )
+    
 armstrong(37)
+by_digit_armstrong(15)
