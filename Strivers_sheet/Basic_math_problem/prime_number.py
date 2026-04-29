@@ -34,5 +34,20 @@ def prime_by_brute(num):
     else:
         print(f"{num} is not a prime number")
         return False
+import math
 
-prime_by_brute(15)
+def prime_by_optimal(num):
+    count = 0
+    for i in range(1,int(math.sqrt(num))+1):
+        if num % i ==0:
+            count += 1
+            if num / i ==num :
+                count = count + 1
+    if count == 2:
+        print(f"{num} is a prime number")
+        return True
+    else:
+        print(f"{num} is not a prime number")
+        return False
+prime_by_brute(17)
+prime_by_optimal(17)
