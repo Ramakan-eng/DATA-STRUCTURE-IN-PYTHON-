@@ -29,6 +29,14 @@ class First_NSum:
         total = int(num*(num + 1) / 2)
         print(total)
         return total
+    
+    def by_recursion(self,num):
+        sum =0 
+        if num == 1:
+            return 1
+        
+        return num + self.by_recursion(num-1)
+    
 
 
 
@@ -36,5 +44,5 @@ class First_NSum:
 obj = First_NSum()
 obj.by_loop(5)
 obj.by_formula(5)
-
+print(obj.by_recursion(5))
 
