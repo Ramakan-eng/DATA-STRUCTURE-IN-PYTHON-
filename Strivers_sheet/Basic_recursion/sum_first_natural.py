@@ -24,8 +24,17 @@ class First_NSum:
         print(total)
         return total
     
+    def by_formula(self ,num):
+
+        total = int(num*(num + 1) / 2)
+        print(total)
+        return total
+
+
+
 
 obj = First_NSum()
 obj.by_loop(5)
+obj.by_formula(5)
 
 
