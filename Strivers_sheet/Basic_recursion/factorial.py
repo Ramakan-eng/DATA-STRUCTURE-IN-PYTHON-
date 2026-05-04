@@ -32,4 +32,15 @@ def fact(num):
         return 1
     return num * (fact(num-1))
 
+def fect_loop(num):
+    factorial =1
+    if num ==0 or num == 1:
+        return factorial
+
+    for i in range(1,num+1):
+        factorial = factorial * i
+    return factorial
+    
+
 print(fact(5))
+print(fect_loop(5))
