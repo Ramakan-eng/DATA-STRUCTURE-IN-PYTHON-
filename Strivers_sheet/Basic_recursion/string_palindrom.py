@@ -24,10 +24,10 @@ def  string_palindrome_by_broute(string_char):
         reverse_string = reverse_string + string_char[i]
         
     if reverse_string == string_char :
-        print(f"{string_char} is a string palindrome")
+        print(f"{string_char} is  string palindrome")
         return "palindrome"
     else : 
-        print (f"{string_char} is not a palindrom string")
+        print (f"{string_char} is not  palindrom string")
 
 string_palindrome_by_broute("ABCDCBA")
 
@@ -50,3 +50,4 @@ if result == True:
     print(f"{str_in} is a  palindrome string")
 else:
     print(f"{str_in} is not in a palindrome string")
+
