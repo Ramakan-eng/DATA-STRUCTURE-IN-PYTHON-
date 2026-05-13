@@ -11,6 +11,21 @@ def fibonacci(num):
             
 # fibonacci(5)
 
+
+def fibonacci(n):
+    a, b = 0, 1
+
+    for i in range(n):
+        a, b = b, a + b
+        print(a)
+    
+    return a
+
+print(fibonacci(4))
+
+
+
+
 def fibonaccis(N):
 
     if N <= 1:
@@ -24,4 +39,4 @@ def fibonaccis(N):
 
 # Driver code
 N = 4
-print(fibonaccis(N))  
+# print(fibonaccis(N))  
