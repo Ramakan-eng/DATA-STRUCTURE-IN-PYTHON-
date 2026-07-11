@@ -14,7 +14,7 @@ def fibonnaci(num):
 
         print(f"fibonnacci series of {num} is : ")
         print(" ".join(str(n) for n in fib))
-# fibonnaci(6)
+fibonnaci(6)
 
 # Better approach 
 
@@ -37,3 +37,17 @@ def fib(n):
             print(curtent_val, end = " ")        
         
 fib(4)
+
+
+# optimal solution for this 
+
+def opt_fib(n):
+    if n <= 1:
+        return n
+    last_num = opt_fib(n-1)
+    slast_num = opt_fib(n-2)
+
+    return last_num + slast_num
+
+result = opt_fib(4)
+print(result)
