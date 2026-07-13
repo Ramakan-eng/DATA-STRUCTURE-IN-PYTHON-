@@ -9,28 +9,34 @@
 
 ## BROUTE FORCE TECHNIQUE
 
-def freq_arr(arr, n):
-   visited_arr = [0] * n
+# def freq_arr(arr, n):
+#    visited_arr = [0] * n
 
-   for i in range(n):
-       if visited_arr[i]:
-           continue
-       count =1
-       for j in range(i+1,n):
-           if arr[i] == arr[j]:
-               visited_arr[j] = 1
-               count =count + 1
-       print(arr[i],":",count,end=" ")
+#    for i in range(n):
+#        if visited_arr[i]:
+#            continue
+#        count =1
+#        for j in range(i+1,n):
+#            if arr[i] == arr[j]:
+#                visited_arr[j] = 1
+#                count =count + 1
+#        print(arr[i],":",count,end=" ")
 
-freq_arr([10,5,10,15,10,0],6)
+# freq_arr([10,5,10,15,10,0],6)
+
+
+# BY DICTIONARY 
 
 
 
-# arr= [10,5,10,15,10,5]
-# freq = {}
-# for i in arr:
-#     if i in freq:
-#         freq[i] =freq[i]+1
-#     else:
-#         freq[i] = 1
-# print("frequency of words:",freq)
+arr= [10,5,10,15,10,5]
+freq = {}
+for i in arr:
+    if i in freq:
+        freq[i] =freq[i]+1
+    else:
+        freq[i] = 1
+print("frequency of words:",freq)
+
+
+
